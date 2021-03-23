@@ -1,0 +1,62 @@
+"""Source Program for Homework #6 for CS 3A
+Written by Dong Hee Jang, 6/10/2018
+-----------------Assignment 6 Part 1 Source------------------"""
+
+def isColliding(balla, ballb):
+    # Method to calculate if two balls are colliding
+
+    # Get balla and ballb values
+    xa, ya, ra = balla
+    xb, yb, rb = ballb
+    # Calculate distance between balls
+    d = ((xb-xa)**2 + (yb-ya)**2)**0.5
+    # Return True if distance is less than or equal to
+    # The sum of the balls' radii
+    return d <= ra + rb
+
+# Test Run
+print("A(1, 1, 0.7), B(2, 62, 0.7):", isColliding((1, 1, 0.7), (2, 2, 0.7)))
+print("B(1, 1, 0.8), B(2, 62, 0.8):", isColliding((1, 1, 0.8), (2, 2, 0.8)))
+
+"""-----------Assignment 6 Part 1 Run---------------------
+
+C:\Users\Brendan\PycharmProjects\untitled\venv\Scripts\python.exe C:/Users/Brendan/PythonProjects/Foothill_6/cs_3_assignment_6_part_1.py
+A(1, 1, 0.7), B(2, 62, 0.7): False
+B(1, 1, 0.8), B(2, 62, 0.8): True
+
+Process finished with exit code 0
+
+--------------------End--------------------------------"""
+
+"""------------------Assignment 6 Part 2 Source-------------------------
+There is an index error occurring on line 10 at the end of the loop. The
+iteration variable i is holding the value and not pointing to the item
+directly. When i == 2, index 4 in myCheeseList (Emmental) is deleted. Once
+Emmental is deleted, Gloucester which had the index 5 becomes the new index 4
+and Gouda which had the index 6, becomes the new index 5. This causes the
+IndexError, list index out of range to be given. We can fix this problem by
+using the built in function enumerate(). This will give us a tuple made up of
+the list index and its corresponding value in each iteration. Then we can use
+the index to modify the list as we see fit."""
+
+# set up a list to iterate on
+myCheeseList = ["Apple", "Asiago", "Brie", "Caerphilly", "Emmental",
+                "Gloucester", "Gouda"]
+
+for i, item in enumerate(myCheeseList):
+    if i == 2:
+        del myCheeseList[4]
+    print(i, myCheeseList[i])
+
+"""------------Assignment 6 Part 2 Run-------------
+C:\Users\Brendan\PycharmProjects\untitled\venv\Scripts\python.exe C:/Users/Brendan/PycharmProjects/untitled/cs_3_assignment_6_part_2.py
+0 Apple
+1 Asiago
+2 Brie
+3 Caerphilly
+4 Gloucester
+5 Gouda
+
+Process finished with exit code 0
+-------------------------End-----------------------"""
+

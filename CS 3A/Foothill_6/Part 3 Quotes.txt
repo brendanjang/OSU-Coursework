@@ -1,0 +1,14 @@
+Files:
+Search loops are ways for us to find lines that are "interesting" or worth noting and skipping the other lines.
+
+Open with 'w' to write a file. If its an already existing file, the write mode empties out out existing data and starts now. A new file is created if one does not exist.
+
+Dictionaries:
+Dictionaries and lists are similar but dictonaries are more general. In a dictionary, the index positions can consist of almost any type. The dictionary links the indices and values. Each individual key maps to a value. This is called a key-value pair.
+
+An implementation is a specific way of computing. There may be multiple ways of implementing something but efficiency can differ between them, making one method better than others. An advantage of using a dictionary is that we don't necessarily have to know when something appears. We just have to make room in the dictonary.
+
+Tupules:
+Tupules are like lists. They are a sequence of values that can consist of any type. Their indices are integers. The primary difference between a tupule and a list is that tupules are immutable. This means they cannot be changed. They can be sorted and used as dictionary keys.
+
+A feature that is unique to Python is that we can hold a tupule on the left side of an assignment statement. This means that when the left side is a sequence, we can assign multiple variables at once.

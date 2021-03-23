@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "335756116850",
+    "project_id": "waste-agram",
+    "storage_bucket": "waste-agram.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335756116850:android:9dd9804a82056f367453eb",
+        "android_client_info": {
+          "package_name": "com.wastagram_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335756116850-el0u7kk5hitmmkt1ok0s6k460o9b7udn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8lKHjfjdimgcGSsQvEjayNDyrMs_2QKU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335756116850-el0u7kk5hitmmkt1ok0s6k460o9b7udn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "335756116850-lrpir5cd9jd3arht0in9j9dnhe5akdvc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.wastagramApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
