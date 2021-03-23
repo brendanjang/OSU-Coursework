@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>Weather Report Activity</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<label>Input city or zip code of where you want to see weather info.</label>
+			<fieldset>
+				<p>
+					<label>Zip Code:<input type="text" name="zip" id="zip" size="9"</label>
+				</p>
+				<p>
+					<label>City:<input type="text" name="city" id="city" size="30"</label>
+				</p>
+				<p>
+					<input type="submit" name ="submit" id="getForecast">
+				</p>
+			</fieldset>
+		</fieldset>
+	</form>
+	
+	<table>
+		<caption>Weather Forecoast</caption>
+		<tr>
+			<th>Description</th>
+			<th>Result</th>
+		</tr>
+		<tr>
+			<td>Temperature:</td>
+			<td id="temp">Console</td>
+		</tr>
+		<tr>
+			<td>Humidity:</td>
+			<td id ="humidity">Console</td>
+		</tr>
+		<tr>
+			<td>Wind Speed:</td>
+			<td id="windSpeed">Console</td>
+		</tr>
+		<tr>
+			<td>Sunrise at:</td>
+			<td id="sunrise">Console</td>
+		</tr>
+	</table>
+	
+	<script src="weather.js"></script>
+</body>
+</html>

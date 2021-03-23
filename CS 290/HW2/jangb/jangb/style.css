@@ -1,0 +1,41 @@
+table, th, td, form {
+	border-color: #777777;
+	border-style: solid;
+	border-width: 1px;
+}
+
+tbody td:first-child {
+	font-style: italic;
+}
+
+tbody td:nth-child(2) {
+	color: red;
+}
+
+tbody td:nth-child(4) {
+	color: blue;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: #aaFFcc;
+}
+
+li {
+    list-style-type: none;
+}
+
+div.outer-content {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 20px;
+    background-color:pink;
+    width: 75%;
+    padding: 10px;
+}
+
+div.inner-content{
+    text-align: center;
+    margin: 0 auto;
+    background-color:blue;
+	width: 75%;
+}

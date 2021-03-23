@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Learn Programming Resources</title>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <link href="page.css" rel="stylesheet" type="text/css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div class="navigationbar">
+        <a  href="./index.html">Home</a>
+        <a href="./tech_update.html">News</a>
+        <a class="active" href="./contact_feedback.html">Feedback</a>
+        <a href="./download_hub.html">Downloads</a>
+    </div>
+    <div class="feedback_row">
+        <div class="feedback_column">
+            <div>
+              <img src="img/ateb-feedback.svg">
+      
+                <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="POST">
+                  <div class="form-group"></div>
+                  <label for="coursename">SELECT COURSE TYPE</label>
+                  <select class="form-control form_alignment" name="coursetypes">
+                    <option value="js">JAVASCRIPT</option>
+                    <option value="java">JAVA</option>
+                    <option value="python">PYTHON</option>
+                  </select>
+                  
+                  <br>
+                  <label for="coursename">SELECT COURSE NAME : </label>
+                  <select class="form-control form_alignment" name="course">
+                    <option value="Go from zero to hero in Python 3">Go From Zero to Hero in Python 3</option>
+                    <option value="Learn Python Programming Masterclass">Learn Python Programming Masterclass</option>
+                    <option value="Build 10 Real World Applications">Build 10 Real World Applications</option>
+                    <option value="Everything You Need to Program in Python">Everything You Need to Program in Python</option>
+                    <option value="The Complete JavaScript: Build Real Projects!">The Complete JavaScript: Build Real Projects!</option>
+                    <option value="JavaScript: Understanding the Weird Parts">JavaScript: Understanding the Weird Parts</option>
+                    <option value="Modern JavaScript From The Beginning">Modern JavaScript From The Beginning</option>
+                    <option value="ES6 Javascript: The Complete Developer's Guide">ES6 Javascript: The Complete Developer's Guide</option>
+                    <option value="Java Programming Masterclass for Software Developers">Java Programming Masterclass for Software Developers</option>
+                    <option value="Java In-Depth: Become a Complete Java Engineer!">Java In-Depth: Become a Complete Java Engineer!</option>
+                    <option value="Java Programming for Complete Beginners - Learn in 250 Steps">Java Programming for Complete Beginners - Learn in 250 Steps</option>
+                    <option value="JSP, Servlets and JDBC for Beginners: Build a Database App">JSP, Servlets and JDBC for Beginners: Build a Database App</option>
+                  </select>
+          
+                  <br>
+                    <label for="email">EMAIL ADDRESS:</label>
+                    <input name="email" type="email" class="form-control form_alignment" id="email" />
+
+                    <br>
+                    <label for="exampleFormControlTextarea1">FEEDBACK</label>
+                    <textarea name="feedback" class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">SUBMIT</button>
+                </form>
+              </div>
+        </div>
+      </div>
+    
+  </body>
+</html>

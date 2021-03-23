@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Learn Programming Resources</title>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <link href="page.css" rel="stylesheet" type="text/css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div class="navigationbar">
+        <a href="./index.html">Home</a>
+        <a class="active" href="./tech_update.html">News</a>
+        <a href="./contact_feedback.html">Feedback</a>
+        <a href="./download_hub.html">Downloads</a>
+    </div>
+
+    <div>
+      <h3 class="newsdetailheader">JAVA: Red Hat Takes Over OpenJDK Maintenance</h3>
+      <div class="newsdetail">
+          <p>Red Hat is taking over the stewardship of OpenJDK 8 and OpenJDK 11 from Oracle. This means Red Hat will look after aspects such as security patches and bug fixes for the two OpenJDK releases. Updates may still come from Oracle, Red Hat, or other providers.</p>
+
+          <p>OpenJDK 8 and 11 are the current most important versions of the free open source implementation of Java Platform, Standard Edition (Java SE). Java 11 is the first long-term support version of Java, but Java 8 remains the most widely used version. JDK 12, the current version of standard Java, was released last month, and JDK 13 is expected in September.</p>
+          <p>
+              Until recently, Oracle essentially controlled Java, but over recent months it has moved away from that position, starting with the handing over of support and maintenance of Java Platform, Enterprise Edition to the Eclipse Foundation. Oracle kept the Java name, meaning the Enterprise Edition is now called Jakarta EE. Going further back in time, Red Hat took the lead in the OpenJDK 6 and OpenJDK 7 projects.
+
+              <p>Red Hat’s long-time Java technical lead, Andrew Haley, was appointed as project lead for OpenJDK 8 and OpenJDK 11 in February. Alongside the takeover of responsibility for the free open source version of OpenJDK, Red Hat announced commercial support for OpenJDK on Windows back in December. Open JDK11 is important because other suppliers of open source Java, such as AWS and SAP, use OpenJDK 11 as the basis of their own releases.</p>
+              
+              <p>Red Hat plans to launch OpenJDK in a Microsoft installer in the coming weeks and distribute IcedTea-Web, the free software implementation of Java Web Start, as part of the Windows OpenJDK distribution.
+          </p>
+        
+      </div>
+
+      <h3 class="newsdetailheader">Android: Android Is Kotlin First</h3>
+      <div class="newsdetail">
+          <p>There isn't much substantive for the Android programmer announced at this year's Google I/O,  but there are signs about the future direction it is all heading in - and its Kotlin-oriented.</p>
+
+          <p>I think Kotlin is a great language, but the idea that you can switch the entire developer ecosystem from one language to another is thinking really big. It has been obvious that the Android team liked Kotlin, and perhaps a little higher up Google saw some safety in Kotlin from Oracle's attack on Android's use of Java. Yes, it could be that Google is running from Java to escape Oracle's reach, but if so it is at least running to a better place.</p>
+          <p>At Google I/O we were given a clear statement that the move to Kotlin is accelerating:</p>
+          <p>As long as you don't mind giving up the investment you have made in Java, this is all good. Of course you won't be able to ignore Java in the future as the Android Framework and the SDK is in Java and the task of rewriting it all is too big to contemplate.</p>
+          <p>It is also unlikely to get Google off the hook if the Supreme Court goes along with the verdict that APIs are copyright. In this case reimplementing the SDK wouldn't make any difference as the actual function names and parameter lists are copyrighted and it doesn't matter if it is implemented in Kotlin or assembler - they belong to Oracle. In short, Kotlin won't save Android from Oracle.</p>
+        
+        </div>
+
+        
+        <h3 class="newsdetailheader">BABEL: Babel Adds Smart Pipelines</h3>
+      <div class="newsdetail">
+          <p>
+              Babel has been updated with support for smart pipelines and private instant accessors. The JavaScript compiler takes JavaScript ECMAScript 2015+ code and converts it into a backwards compatible version to run in older browsers. 
+          </p>
+
+          <p>
+              Babel can also convert React JSX syntax into JavaScript. The main rationale for using Babel has been reduced as fewer people rely on older browsers that don't have support for ES2015 and beyond.
+          </p>
+          <p>
+              The most recent release (7.3) has added support for smart pipelines. Parsing support was added in version 7.2 of Babel for the Smart Pipelines Operator proposal, and this release lets you transpile it down to standard ECMAScript and try it out. The developers say the current release only supports the main proposal, and none of the additional features. The current implementation also lacks support for yield and await in pipelines.
+          </p>
+          <p>
+              The next improvement in this version is the ability to parse and compile private instance accessors. Babel already had support for private fields and methods for class instances. Private methods and accessors (getter/setters) have now been added, meaning any class element can be private. The addition to Babel adds support for private accessors within the current babel-plugin-class-features + babel-plugin-proposal-private-methods plugin combination. The private getter and setter functions retrieve and update a private field. 
+          </p>
+          <p>
+              The final main improvement to the new version is support for named capturing groups. The developers describe this as being the biggest ECMAScript 2018 feature missing in Babel - until now.  Named capture groups let you assign a name to a capture group. The way this works is that when you match a regular expression against a string, you get a match object, and can assign a name to this. After matching, you can access the captured string by using the name you assigned to it.
+
+              The current release also adds better TypeScript parsing, and a number of bug fixes. 
+          </p>
+        
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

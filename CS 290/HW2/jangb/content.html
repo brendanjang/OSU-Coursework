@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CS290 HTML/CSS</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<table>
+			<caption>Letter Combinations</caption>
+			<tr>
+		<thead>
+			<th><th>A<th>B<th>C<th>D<th>E
+		</thead>
+			</tr>
+			<tr>
+				<td>A<td>AA<td>AB<td>AC<td>AD<td>AE
+			</tr>
+			<tr>
+				<td>B<td>BA<td>BB<td>BC<td>BD<td>BE
+			</tr>
+			<tr>
+				<td>C<td>CA<td>CB<td>CC<td>CD<td>CE
+			</tr>
+			<tr>
+				<td>D<td>DA<td>DB<td>DC<td>DD<td>DE
+			</tr>
+			<tr>
+				<td>E<td>EA<td>EB<td>EC<td>ED<td>EE
+			</tr>
+			<tfoot>
+				<td colspan="2">Footer 1
+				<td colspan="4">Footer 2
+			</tfoot>
+		</table>
+		
+		<dl>
+			<dt>Term 1</dt>
+			<dd>Term 1 definition.</dd>
+			<dt>Term 2</dt>
+			<dd>Term 2 definition.</dd>
+			<dt>Term 3</dt>
+			<dd>Term 3 definition.</dd>
+		</dl>
+		
+		<div class="outer-content">
+			<div class="inner-content">
+			Here is some content.
+			</div>
+		</div>
+		
+		GET Data:
+		<form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php"
+				method="get">
+			<ul>
+				<li>Text here: <input type="text" name="text_input"> </li>
+				<li>Number here: <input type="number" name="numerical_input"> </li>
+				<li>Password here: <input type="password" name="password_input"> </li>
+				<li>Select between: </li>
+				
+				<li> <input type="radio" name="candy" value="Snickers">Snickers </li>
+				<li> <input type="radio" name="candy" value="Skittles">Skittles </li>
+				<li> <input type="radio" name="candy" value="Mentos">Mentos </li>
+				<li> <input type="submit"> </li>
+			</ul>
+		</form>
+		
+		POST Data:
+		<form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php"
+				method="post">
+			<ul>
+				<li>Text here: <input type="text" name="text_input"> </li>
+				<li>Number here: <input type="number" name="numerical_input"> </li>
+				<li>Password here: <input type="password" name="password_input"> </li>
+				<li>Select between: </li>
+				
+				<li> <input type="radio" name="candy" value="Snickers">Snickers </li>
+				<li> <input type="radio" name="candy" value="Skittles">Skittles </li>
+				<li> <input type="radio" name="candy" value="Mentos">Mentos </li>
+				<li> <input type="submit"> </li>
+			</ul>
+		</form>
+	</body>
+</html>
